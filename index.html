@@ -1,6 +1,19 @@
 <!doctype html>
-<html>
-
+<html><script type="text/javascript">
+		//<!CDATA[
+			var bodyBgs = [];
+			bodyBgs[0] = "https://pic1.zhimg.com/v2-fcef81a7683dd985ca0fb92903192a4c_r.jpg";
+			bodyBgs[1] = "https://pic2.zhimg.com/v2-c22ccda577a13df40e932b091b829dd5_r.jpg";
+			bodyBgs[2] = "https://pic3.zhimg.com/v2-06ba90c18404d734cdf4dc83a5747926_r.jpg";
+			bodyBgs[3] = "https://pic4.zhimg.com/7bc0d0169d691ca43f88da6f4163aee3_r.jpg";
+			bodyBgs[4] = "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wEaX?ver=4259";
+	
+			var randomBgIndex = Math.round( Math.random() * 4 );
+	
+		//输出随机的背景图
+			document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat 50% 0}</style>');
+		//]]>
+	</script>
 	<head>
 		<meta charset="utf-8">
 		<title>我的个人网页</title>
@@ -22,7 +35,6 @@
 			}
 
 			body {
-				background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wEaX?ver=4259) no-repeat;
 				background-size: cover;
 				background-attachment: fixed;
 			}
