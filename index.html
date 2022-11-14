@@ -1,34 +1,184 @@
-<style>
-  <head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
-</head>
-/*--预设--*/ 
-body { padding:0px;margin: 0px; } 
-#lyrow, #lyrow input, #lyrow textarea { font-size:12px;font-family: 'Microsoft YaHei', '微软雅黑', MicrosoftJhengHei, '华文细黑', STHeiti, MingLiu; } 
-#lyrow { height:100vh;width: 100vw; } 
-#lyrow div { min-height: 18px;  } 
-#lyrow input, #lyrow textarea { border:rgb(235, 235, 235) 1px solid;border-radius: 3px;padding: 5px 8px;outline: 0; } 
-#lyrow input:hover, #lyrow textarea:hover { border: 1px solid #6bc1f2; } 
-/*--编辑--*/ 
-#lyrow .bianju { margin:20px 20px 20px 20px;padding:20px 20px 20px 20px;background-color:rgba(187, 230, 114, 1); } 
-#lyrow .beijing { max-width:1450px;min-width:1450px;background-image:url(https://i0.hdslb.com/bfs/article/1ad4e9ff520575f2099f5e3bf300f9353b6a178b.png@942w_1148h_progressive.webp);margin:422px 0 0 0;height:850px !important; } 
-#lyrow .leisb { margin:20px 20px 20px 20px;background-color:rgba(187, 230, 114, 1); } 
-#lyrow .beijins { width:300px !important;overflow-x:hidden;background-color:rgba(0, 188, 19, 1);margin:30px 0 0 0; } 
-#lyrow .moren { background-color:rgba(187, 230, 114, 1); } 
-#lyrow .morens { width:300px !important;background-color:rgba(0, 188, 19, 1); } 
-#lyrow .beiyo { width:1450px !important;height:850px !important;background-color:rgba(158, 158, 158, 0.49);margin:-444px 0 0 0; } 
-#lyrow .aa { background-color:rgba(77, 77, 77, 0.83);margin:0 25% 0 25%;width:700px !important;height:850px !important; } 
-#lyrow .bb { margin:0 1% 0 1%; } 
+<!doctype html>
+<html>
 
-</style>
-<!--下载font-awesome.css图标包-->
-<!--https://www.58html.com/html/template/font-awesome.zip-->
-<link rel="stylesheet" href="https://www.58html.com/gui/css/font-awesome/css/font-awesome.css">
-<div id="lyrow">
-<div class="beijing">
-<div class="beiyo">
-<div class="aa">
-<div class="bb"><p>Hello 大家好</p> <p>这是我的网站，如果你误入了就请退出吧 </p> <ul> <li> <a href="https://wwc.lanzoum.com/iAB5G0ecautg">水影</a> </li> <li> <a href="https://wwc.lanzoum.com/imDvU0ecay7i">1.12.2进4v4密码:eu7h</a> </li> <li> <a href="https://wwf.lanzoum.com/iVCnp0edh39c">无名端</a> </li><li> <a href="https://wwf.lanzoum.com/iOiaz0edgv1g">Process_Hacker注入器</a> </li>
-</div>
+	<head>
+		<meta charset="utf-8">
+		<title>我的个人网页</title>
+		<style type="text/css">
+			a {
+				text-decoration: none;
+			}
 
+			.clearfix:after {
+				content: "";
+				display: block;
+				height: 0;
+				visibility: hidden;
+				clear: both;
+			}
+
+			.clearfix {
+				*zoom: 1;
+			}
+
+			body {
+				background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wEaX?ver=4259) no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+
+			.content {
+				width: 900px;
+				height: 700px;
+				margin: 200px auto 0 auto;
+				border-radius: 10px;
+				background-color: rgba(236, 236, 236, 0.59);
+				transition: all 1.0s;
+				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
+			}
+
+			.content img {
+				float: left;
+				width: 250px;
+				height: 250px;
+				margin: 150px 0 0 80px;
+				border-radius: 100px;
+
+			}
+
+			.content:hover {
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
+			}
+
+			.content_r {
+				float: right;
+				width: 500px;
+				margin: 80px 60px 0 0;
+				/*	background-color: pink;*/
+			}
+
+			.content_l {
+				float: left;
+				width: 100%;
+				text-align: center;
+			}
+
+			.content_l h5 {
+
+				font-size: 17px;
+			}
+
+			.cc {
+				margin-top: 10px;
+				color: #1F2023;
+				font-size: 18px;
+			}
+
+			.color_1 {
+				color: #3f4694;
+				font-size: 32px;
+			}
+			
+			.color_sum {
+				color: #fff;
+			}
+			
+			.color_3 {
+				color: #fff;
+				font-size: 32px;
+			}
+
+			.color_2 {
+				color: #3f4694;
+				font-size: 24px;
+			}
+
+			.deeppink {
+				color: deeppink;
+			}
+
+			.link {
+				margin-top: 30px;
+			}
+
+			.link a {
+				display: block;
+				float: left;
+				width: 120px;
+				height: 45px;
+				margin: 5px 5px 0 0;
+				/*	padding: 0 15px;*/
+				color: #fff;
+				line-height: 45px;
+				transition: all 0.8s;
+				/*	background-color: deeppink;*/
+
+			}
+
+			.link a:hover {
+				background-color: rgba(0, 201, 243, 0.35);
+			}
+
+			.deeppink_1 {
+				background-color: deeppink;
+			}
+
+			.dodgerblue {
+				background-color: dodgerblue;
+			}
+
+			.magenta {
+				background-color: magenta;
+			}
+			
+			.color_sum_4V4 {
+				background-color: rgb(219, 33, 0);
+			}
+			
+			.color_zr {
+				background-color: rgb(119, 0, 255);
+			}
+
+			.color_bb {
+				background-color: rgb(0, 68, 255);
+			}
+			
+			.color_hark {
+				background-color: rgb(133, 204, 0);
+			}
+			.orange {
+				background-color: orange;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<img src="https://gitee.com/vmu/cimg/raw/master/img/ch.jpg" alt="">
+			<div class="content_r clearfix">
+				<div class="content_l clearfix">
+					<h2>Hi~ Welcome here ！</h2>
+					<p class="cc">欢迎来到主页~</p>
+					<p class="cc">爱好计算机，会去自学一些感兴趣的东西 !</p>
+					<br>
+					<p class="color_1">I'm going to hit hyt with LiquidBounce</p>
+					<p class="color_2">我将以液体反弹出击花雨庭!</p>
+					<br>
+					<p class="deeppink">只要路是对的，就不怕路远。</p>
+					<p class="deeppink">As long as the road is right, you are not afraid of the distance.</p>
+					<div class="link">
+						<a href="#" class="dodgerblue" target="_blank">官网</a>
+						<a href="https://github.com/jumpabc" class="deeppink_1" target="_blank">github</a>
+						<a href="https://ymjin.blog.csdn.net/" class="magenta" target="_blank">个人博客</a>
+						<a href="https://ymjin.blog.csdn.net/" class="orange" target="_blank">网易云音乐</a>
+						<a href="https://wwf.lanzoum.com/i72Hm0fvpqwf" class="color_sum_4V4" target="_blank">SUM_1107_4V4</a>
+						<a href="https://wwf.lanzoum.com/i5SpU0fvpw1a" class="color_zr" target="_blank">注入器</a>
+						<a href="https://wwf.lanzoum.com/iPiKE0fwesbg" class="color_bb" target="_blank">hyt必备</a>
+						<a href="https://wwf.lanzoum.com/iVCnp0edh39c" class="color_hark" target="_blank">无名黑客</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
