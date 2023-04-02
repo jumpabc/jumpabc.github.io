@@ -1,0 +1,225 @@
+<!doctype html>
+<html><script type="text/javascript">
+		//<!CDATA[
+			var bodyBgs = [];
+			bodyBgs[0] = "https://pic1.zhimg.com/v2-fcef81a7683dd985ca0fb92903192a4c_r.jpg";
+			bodyBgs[1] = "https://pic2.zhimg.com/v2-c22ccda577a13df40e932b091b829dd5_r.jpg";
+			bodyBgs[2] = "https://pic3.zhimg.com/v2-06ba90c18404d734cdf4dc83a5747926_r.jpg";
+			bodyBgs[3] = "https://pic4.zhimg.com/7bc0d0169d691ca43f88da6f4163aee3_r.jpg";
+			bodyBgs[4] = "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wEaX?ver=4259";
+	
+			var randomBgIndex = Math.round( Math.random() * 4 );
+	
+		//输出随机的背景图
+			document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat 50% 0}</style>');
+		//]]>
+	</script>
+	<head>
+		<meta charset="utf-8">
+		<title>我的个人网页</title>
+		<style type="text/css">
+			a {
+				text-decoration: none;
+			}
+
+			.clearfix:after {
+				content: "";
+				display: block;
+				height: 0;
+				visibility: hidden;
+				clear: both;
+			}
+
+			.clearfix {
+				*zoom: 1;
+			}
+
+			body {
+				background-size: cover;
+				background-attachment: fixed;
+			}
+
+			.content {
+				width: 900px;
+				height: 500px;
+				margin: 100px auto 0 auto;
+				border-radius: 10px;
+				background-color: rgba(236, 236, 236, 0.59);
+				transition: all 1.0s;
+				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
+			}
+			
+			.content_2 {
+				width: 900px;
+				height: 700px;
+				margin: 10px auto 0 auto;
+				border-radius: 10px;
+				background-color: rgba(236, 236, 236, 0.59);
+				transition: all 1.0s;
+				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
+			}
+
+			.content:hover {
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
+			}
+
+			.content_r {
+				float: right;
+				width: 700px;
+				margin: 50px 90px 0 0;
+				/*	background-color: pink;*/
+			}
+
+			.content_l {
+				float: left;
+				width: 100%;
+				text-align: center;
+			}
+
+			.content_l h5 {
+
+				font-size: 17px;
+			}
+
+			.cc {
+				margin-top: 10px;
+				color: #1F2023;
+				font-size: 18px;
+			}
+
+			.color_1 {
+				color: #3f4694;
+				font-size: 32px;
+			}
+			
+			.color_sum {
+				color: #fff;
+			}
+			
+			.color_3 {
+				color: #fff;
+				font-size: 32px;
+			}
+
+			.color_2 {
+				color: #3f4694;
+				font-size: 24px;
+			}
+
+			.deeppink {
+				color: deeppink;
+			}
+
+			.link {
+				box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+			}
+
+			.link a {
+				display: block;
+				float: left;
+				width: 220px;
+				height: 45px;
+				margin: 5px 5px 0 0;
+				/*	padding: 0 15px;*/
+				color: #fff;
+				line-height: 45px;
+				transition: all 0.8s;
+				/*	background-color: deeppink;*/
+
+			}
+
+			.link a:hover {
+				background-color: rgba(0, 201, 243, 0.35);
+			}
+
+			.deeppink_1 {
+				background-color: deeppink;
+			}
+
+			.dodgerblue {
+				background-color: dodgerblue;
+			}
+
+			.magenta {
+				background-color: magenta;
+			}
+			
+			.color_sum_4V4 {
+				background-color: rgb(219, 33, 0);
+			}
+			
+			.color_zr {
+				background-color: rgb(119, 0, 255);
+			}
+
+			.color_zrrr {
+				background-color: rgb(151, 34, 141);
+			}
+
+			.color_bb {
+				background-color: rgb(0, 68, 255);
+			}
+			
+			.color_bs {
+				background-color: rgb(23, 134, 88);
+			}
+			
+			.color_hark {
+				background-color: rgb(133, 204, 0);
+			}
+			.orange {
+				background-color: orange;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="content_r clearfix">
+				<div class="content_l clearfix">
+					<h2>Hi~ Welcome here ！</h2>
+					<p class="cc">欢迎来到主页~</p>
+					<p class="cc">爱好计算机，会去自学一些感兴趣的东西 !</p>
+					<br>
+					<p class="color_1">Xiangyang flowers and trees are easy for spring, I heard that you love Kun </p>
+					<p class="color_2">向阳花木易为春，听说你爱蔡徐坤 !</p>
+					<br>
+					<p class="deeppink">只要路是对的，就不怕路远。</p>
+					<p class="deeppink">As long as the road is right, you are not afraid of the distance.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="content_2">
+			<div class="content_r clearfix">
+				<div class="content_l clearfix">
+					<h2>一些奇怪的小东西</h2>
+					<div class="link">
+						<a href="#" class="dodgerblue" target="_blank">官网</a>
+						<a href="https://github.com/jumpabc" class="deeppink_1" target="_blank">github</a>
+						<a href="https://github.com/jumpabc" class="magenta" target="_blank">个人博客</a>
+						<a href="https://music.163.com/" class="orange" target="_blank">网易云音乐</a>
+						<a href="https://www.bilibili.com/video/av50183113" class="color_sum_4V4" target="_blank">偶像练习生</a>
+						<a href="https://y.qq.com/n/ryqq/songDetail/0020Nusb3QJGn9" class="color_zrrr" target="_blank">成名曲</a>
+						<a href="https://www.bilibili.com/video/BV1jN4y1A7CE" class="color_zr" target="_blank">安乐死</a>
+						<a href="https://www.bilibili.com/video/BV1Vg411z7TA" class="color_bb" target="_blank">♥恋爱循环♥</a>
+						<a href="https://www.bilibili.com/video/BV1TJ411q7Zs" class="color_hark" target="_blank">坤哥初战</a>
+						<a href="https://www.bilibili.com/video/BV1p94y197jR" class="color_bs" target="_blank">坤坤大战三浦</a>
+						<a href="https://www.bilibili.com/video/BV1q4411z7iW" class="color_bs" target="_blank">芒种</a>
+						<a href="https://www.bilibili.com/video/BV18g41117HB" class="color_bs" target="_blank">女IKUN</a>
+						<a href="https://www.bilibili.com/video/BV1oN4y1u723" class="color_bs" target="_blank">IKUN速成</a>
+						<a href="https://www.bilibili.com/video/BV16d4y1g7dB" class="color_bs" target="_blank">把篮球和鸡联系起来想想</a>
+						<a href="https://d.ifengimg.com/w690_h976_ablur_q90_webp/e0.ifengimg.com/10/2019/0414/33F2A43C8B19A1D2B0E8380DB87B21E883AE31F3_size126_w690_h976.jpeg" class="color_bs" target="_blank">律师函</a>
+						<a href="https://www.bilibili.com/video/BV1cG411L7zo" class="color_bs" target="_blank">IKUN测试①</a>
+						<a href="https://www.bilibili.com/video/BV1QW4y1q7up" class="color_bs" target="_blank">IKUN测试②</a>
+						<a href="https://www.bilibili.com/video/BV1G14y1Y7Pc" class="color_bs" target="_blank">IKUN警察</a>
+						<a href="https://www.bilibili.com/video/BV1y14y1a7UR" class="color_bs" target="_blank">13岁的蔡徐坤</a>
+						<a href="https://www.bilibili.com/video/BV1d14y1473u" class="color_bs" target="_blank">江 南 四 大 IKUN</a>
+						<a href="https://www.bilibili.com/video/BV1Uf4y1d7GC" class="color_bs" target="_blank">iKun提高班科目一之《铁山靠》</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
