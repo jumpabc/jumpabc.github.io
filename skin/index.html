@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Skin Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<ul id="skins">
+    <li id="addSkin"><span>+</span></li>
+    <li id="export" class="button">导出</li>
+</ul>
+<div id="main">
+    <canvas id="primaryCanvas"></canvas>
+    <div id="panel">
+        <h3 class="panelTitle">选项</h3>
+        <ul id="inspector">
+            <li id="inspectDefaultActions">
+                <a href="#" class="button" id="uploadModel">上传模型</a>
+                <a href="#" class="button" id="uploadTexture">上传贴图</a>
+                <a href="#" class="button" id="deleteSkin">删除</a>
+            </li>
+        </ul>
+        <h3 class="panelTitle">模型结构</h3>
+        <ul id="groupTree"></ul>
+    </div>
+</div>
+<div id="point3DMover">
+    <div class="moveHandle" id="point3DMoverX"><div class="arrow"></div></div>
+    <div class="moveHandle" id="point3DMoverY"><div class="arrow"></div></div>
+    <div class="moveHandle" id="point3DMoverZ"><div class="arrow"></div></div>
+    <div class="circle"></div>
+</div>
+<script src="gl-matrix-min.js"></script>
+<script src="zip.js"></script>
+<script src="data.js"></script>
+<script src="obj_parser.js"></script>
+<script src="renderer.js"></script>
+<script src="ui.js"></script>
+<script>
+    let uiManager = new UiManager();
+</script>
+</body>
+</html>
